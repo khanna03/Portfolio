@@ -35,11 +35,11 @@ export default function Projects() {
       </div>
 
       {/* Projects Grid */}
+      {/* Note: 'group' class is a powerful Tailwind feature. 
+          We put 'group' on the parent container, and then use 'group-hover:text-gold-400' on a child element inside it. 
+          This makes the child element react when you hover anywhere over the *parent* container. */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {projects.map((project) => (
-          {/* Note: 'group' class is a powerful Tailwind feature. 
-              We put 'group' on the parent container, and then use 'group-hover:text-gold-400' on a child element inside it. 
-              This makes the child element react when you hover anywhere over the *parent* container. */}
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 20 }}
