@@ -37,9 +37,9 @@ export default function Projects() {
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {projects.map((project) => (
-          {/* LEARNING POINT: 'group' class is a powerful Tailwind feature. 
+          {/* Note: 'group' class is a powerful Tailwind feature. 
               We put 'group' on the parent container, and then use 'group-hover:text-gold-400' on a child element inside it. 
-              This makes the child element react when you hover anywhere over the *parent* container! */}
+              This makes the child element react when you hover anywhere over the *parent* container. */}
           <motion.div
             key={project.id}
             initial={{ opacity: 0, y: 20 }}
@@ -108,7 +108,7 @@ export default function Projects() {
       </div>
 
       {/* Case Study Fullscreen Modal */}
-      {/* LEARNING POINT: The modal is only rendered if 'activeProject' is not null. 
+      {/* Note: The modal is only rendered if 'activeProject' is not null. 
           When a user clicks "View Case Study", we set 'activeProject' to that project's data.
           When they click outside or on the 'X', we set it back to null to close the modal. */}
       <AnimatePresence>

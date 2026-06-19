@@ -21,7 +21,7 @@ const words = [
 ];
 
 export default function Hero() {
-  // LEARNING POINT: useState holds data that changes over time and triggers UI updates.
+  // Note: useState holds data that changes over time and triggers UI updates.
   // 'index' tracks which word from the 'words' array is currently being displayed.
   const [index, setIndex] = useState(0);
 
@@ -39,12 +39,12 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      // LEARNING POINT: 'min-h-screen' ensures the section takes up at least 100% of the viewport height.
+      // Note: 'min-h-screen' ensures the section takes up at least 100% of the viewport height.
       // 'overflow-hidden' prevents decorative background elements from causing unwanted scrollbars.
       className="relative min-h-screen w-full flex flex-col items-center justify-center bg-obsidian-950 px-6 overflow-hidden"
     >
       {/* Background Radial Gold Glow */}
-      {/* LEARNING POINT: Tailwind's arbitrary values feature `bg-[...]` lets us write raw CSS.
+      {/* Note: Tailwind's arbitrary values feature `bg-[...]` lets us write raw CSS.
           We use a radial gradient to create a subtle spotlight effect behind the text. */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.04)_0%,transparent_70%)] pointer-events-none" />
 
@@ -63,10 +63,9 @@ export default function Hero() {
       <div className="z-10 text-center max-w-4xl flex flex-col items-center justify-center px-4">
         
         {/* Emblem / Monogram */}
-        {/* LEARNING POINT: motion.div is a Framer Motion component. 
+        {/* Note: motion.div is a Framer Motion component. 
             'initial' sets the starting state (invisible, slightly shrunk).
-            'animate' defines the final state (visible, full size).
-            It automatically handles the smooth transition between the two! */}
+            'animate' defines the final state (visible, full size). */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -102,7 +101,7 @@ export default function Hero() {
 
         {/* Subtitle / Animated Typing Text */}
         <div className="h-10 md:h-12 flex items-center justify-center mb-8">
-          {/* LEARNING POINT: AnimatePresence allows elements to animate OUT when they are removed from the React DOM.
+          {/* Note: AnimatePresence allows elements to animate OUT when they are removed from the React DOM.
               By giving motion.div a 'key' of {index}, React knows it's a completely new element when the index changes,
               triggering the 'exit' animation for the old word, and the 'initial' animation for the new word. */}
           <AnimatePresence mode="wait">

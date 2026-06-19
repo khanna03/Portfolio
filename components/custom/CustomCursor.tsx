@@ -26,7 +26,7 @@ export default function CustomCursor() {
   const innerYSpring = useSpring(cursorY, { damping: 25, stiffness: 600 });
 
   useEffect(() => {
-    // LEARNING POINT: window.matchMedia is used here to detect if the device has a mouse.
+    // Note: window.matchMedia is used here to detect if the device has a mouse.
     // "(hover: none)" means it's likely a touch device (like a phone or tablet),
     // so we disable the custom cursor to prevent it from getting stuck on the screen.
     if (window.matchMedia("(hover: none)").matches) {
@@ -43,7 +43,7 @@ export default function CustomCursor() {
     const handleMouseDown = () => setIsClicked(true);
     const handleMouseUp = () => setIsClicked(false);
 
-    // LEARNING POINT: We want the cursor to change shape when hovering over clickable things.
+    // Note: We want the cursor to change shape when hovering over clickable things.
     // We select common interactive HTML tags (a, button, input) and add event listeners to them.
     const addHoverListeners = () => {
       document.querySelectorAll("a, button, [role='button'], input, textarea, select, .clickable").forEach((el) => {
@@ -56,7 +56,7 @@ export default function CustomCursor() {
     window.addEventListener("mousedown", handleMouseDown);
     window.addEventListener("mouseup", handleMouseUp);
     
-    // LEARNING POINT: A MutationObserver watches the DOM (HTML structure) for changes.
+    // Note: A MutationObserver watches the DOM for changes.
     // Since React apps add and remove elements dynamically (like opening a modal),
     // we need to re-scan the page for new buttons to attach our hover listeners to!
     addHoverListeners();
@@ -90,7 +90,7 @@ export default function CustomCursor() {
         }}
       >
         {/* Greek Motif crosshair inside the outer ring */}
-        {/* LEARNING POINT: Conditional rendering. This crosshair only appears when `isHovered` is true. */}
+        {/* Note: Conditional rendering. This crosshair only appears when `isHovered` is true. */}
         {isHovered && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="h-full w-[1px] bg-gold-400/30" />
