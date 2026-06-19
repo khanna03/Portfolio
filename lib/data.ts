@@ -54,7 +54,7 @@ export const personalInfo = {
       degree: "B.Tech in Computer Science Engineering (AI-ML)",
       period: "Aug 2023 – Present",
       location: "Kattankulathur, Chennai",
-      details: "CGPA: 8.0"
+      details: "CGPA: 8.2"
     },
     {
       institution: "Jayshree Periwal High School",
@@ -65,7 +65,7 @@ export const personalInfo = {
     }
   ],
   stats: [
-    { label: "CGPA", value: "8.0" },
+    { label: "CGPA", value: "8.2" },
     { label: "Internships", value: "2" },
     { label: "Public Repos", value: "9" },
     { label: "Certifications", value: "9" }
