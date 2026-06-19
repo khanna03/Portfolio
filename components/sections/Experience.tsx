@@ -33,10 +33,10 @@ export default function Experience() {
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="serif-heading font-semibold text-xs tracking-widest text-gold-500 uppercase mb-3">
-          ✦ Hall of Service ✦
+          Experience
         </h2>
         <h3 className="serif-heading font-bold text-3xl md:text-5xl text-ivory">
-          Professional Legacy
+          Professional Experience
         </h3>
         <div className="mt-4 flex items-center justify-center gap-1">
           <span className="h-[1px] w-8 bg-gold-600/30" />

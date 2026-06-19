@@ -56,10 +56,10 @@ export default function Contact() {
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="serif-heading font-semibold text-xs tracking-widest text-gold-500 uppercase mb-3">
-          ✦ Final Audience Chamber ✦
+          Contact
         </h2>
         <h3 className="serif-heading font-bold text-3xl md:text-5xl text-ivory">
-          Establish Contact
+          Get In Touch
         </h3>
         <div className="mt-4 flex items-center justify-center gap-1">
           <span className="h-[1px] w-8 bg-gold-600/30" />
@@ -78,10 +78,10 @@ export default function Contact() {
             </div>
           </div>
           <h4 className="serif-heading font-bold text-2xl text-ivory">
-            Let us build something extraordinary.
+            Let's work together.
           </h4>
           <p className="text-sm text-parchment/70 leading-relaxed font-sans">
-            Whether you are looking to hire a dedicated AI researcher, seeking technical consulting on RAG pipelines, or interested in full-stack collaboration, the gates of the archive are open. Get in touch directly using the links provided.
+            Whether you are looking to hire a dedicated AI researcher, seeking technical consulting on RAG pipelines, or interested in full-stack collaboration, I am open to new opportunities. Get in touch directly using the links provided.
           </p>
           <div className="hidden lg:block relative w-full h-8 overflow-hidden opacity-30 mt-4">
             <GreekPattern variant="horizontal" className="absolute left-0 right-0" opacity={0.6} />

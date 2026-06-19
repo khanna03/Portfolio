@@ -21,10 +21,10 @@ export default function About() {
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="serif-heading font-semibold text-xs tracking-widest text-gold-500 uppercase mb-3">
-          ✦ Legacy Chamber ✦
+          About
         </h2>
         <h3 className="serif-heading font-bold text-3xl md:text-5xl text-ivory">
-          About The Architect
+          About Me
         </h3>
         <div className="mt-4 flex items-center justify-center gap-1">
           <span className="h-[1px] w-8 bg-gold-600/30" />
@@ -38,7 +38,7 @@ export default function About() {
         {/* Left Column: Biography & Details (7 cols) */}
         <div className="lg:col-span-7 flex flex-col gap-6 text-parchment/80 text-sm md:text-base leading-relaxed">
           <h4 className="serif-heading font-semibold text-lg text-gold-400">
-            A Vision Founded on Intelligence and Structure
+            My Background
           </h4>
           <p>{personalInfo.bio}</p>
           <p>
@@ -120,7 +120,7 @@ export default function About() {
             {/* Minor decorative banner */}
             <div className="w-full text-center border-t border-gold-500/10 pt-4">
               <span className="text-[10px] uppercase font-mono tracking-widest text-parchment/40">
-                ROYAL PATRON IND-2025
+                SOFTWARE ENGINEER
               </span>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function About() {
       {/* Education Timeline Block inside About Section */}
       <div className="mb-16">
         <h4 className="serif-heading font-semibold text-xl text-gold-400 mb-8 border-b border-obsidian-800 pb-2">
-          Academic Foundations
+          Education
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {personalInfo.education.map((edu, idx) => (

@@ -22,10 +22,10 @@ export default function Projects() {
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="serif-heading font-semibold text-xs tracking-widest text-gold-500 uppercase mb-3">
-          ✦ Hall of Innovation ✦
+          Projects
         </h2>
         <h3 className="serif-heading font-bold text-3xl md:text-5xl text-ivory">
-          The Engineering Archives
+          Selected Works
         </h3>
         <div className="mt-4 flex items-center justify-center gap-1">
           <span className="h-[1px] w-8 bg-gold-600/30" />
@@ -54,7 +54,7 @@ export default function Projects() {
             <div>
               <div className="flex justify-between items-start mb-4">
                 <span className="text-[10px] font-mono tracking-widest text-gold-500 uppercase">
-                  {project.featured ? "★ Featured Archive" : "Standard Entry"}
+                  {project.featured ? "★ Featured Project" : "Project"}
                 </span>
                 {project.githubUrl && (
                   <a
@@ -149,7 +149,7 @@ export default function Projects() {
                 {/* Header Title */}
                 <div className="mb-8 border-b border-obsidian-800 pb-6">
                   <span className="text-[10px] font-mono tracking-widest text-gold-400 uppercase">
-                    Case Study Record #{activeProject.id.toUpperCase()}
+                    Project #{activeProject.id.toUpperCase()}
                   </span>
                   <h3 className="serif-heading font-bold text-2xl md:text-4xl text-ivory mt-2">
                     {activeProject.title}

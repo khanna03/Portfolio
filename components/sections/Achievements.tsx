@@ -21,10 +21,10 @@ export default function Achievements() {
       {/* Section Header */}
       <div className="text-center mb-16">
         <h2 className="serif-heading font-semibold text-xs tracking-widest text-gold-500 uppercase mb-3">
-          ✦ Hall of Honors ✦
+          Achievements
         </h2>
         <h3 className="serif-heading font-bold text-3xl md:text-5xl text-ivory">
-          Credentials & Honors
+          Certifications
         </h3>
         <div className="mt-4 flex items-center justify-center gap-1">
           <span className="h-[1px] w-8 bg-gold-600/30" />
@@ -56,7 +56,7 @@ export default function Achievements() {
 
               <div className="flex-grow flex flex-col gap-1">
                 <span className="text-[10px] font-mono text-gold-400 uppercase tracking-widest">
-                  Featured Certification
+                  Featured
                 </span>
                 <h4 className="serif-heading font-bold text-base md:text-lg text-ivory">
                   {cert.title}
@@ -71,7 +71,7 @@ export default function Achievements() {
         {/* Regular Credentials List (Muted detailed table/grid) */}
         <div>
           <h4 className="serif-heading font-semibold text-lg text-gold-400 mb-6 border-b border-obsidian-800 pb-2">
-            Archived Certificates
+            Other Certificates
           </h4>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

@@ -72,7 +72,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="mb-8 p-3 rounded-full border border-gold-500/30 bg-obsidian-900/60 shadow-[0_0_15px_rgba(212,175,55,0.05)]"
         >
-          <Landmark className="h-8 w-8 text-gold-500 animate-pulse" />
+          <Landmark className="h-8 w-8 text-gold-500" />
         </motion.div>
 
         {/* Small Intro Badge */}
@@ -82,8 +82,8 @@ export default function Hero() {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="mb-4 inline-flex items-center gap-2 px-3 py-1 rounded-full border border-gold-500/10 bg-obsidian-900/40 text-xs font-semibold tracking-widest text-gold-400 uppercase"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-gold-500 animate-ping" />
-          Welcome to the Archives
+          <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
+          Welcome
         </motion.div>
 
         {/* Title */}
@@ -140,7 +140,7 @@ export default function Hero() {
             onClick={handleScrollToAbout}
             className="flex items-center justify-center gap-2 px-8 py-3.5 bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-obsidian-950 font-bold uppercase tracking-widest text-xs rounded border border-gold-400/20 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
           >
-            <span>Explore the Archive</span>
+            <span>Explore</span>
             <ArrowDown className="h-4 w-4" />
           </button>
 

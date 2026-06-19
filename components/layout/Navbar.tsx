@@ -13,13 +13,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { id: "hero", label: "Entrance" },
-  { id: "about", label: "Legacy" },
-  { id: "experience", label: "Service" },
-  { id: "projects", label: "Innovation" },
-  { id: "skills", label: "Arsenal" },
-  { id: "achievements", label: "Honors" },
-  { id: "contact", label: "Audience" },
+  { id: "hero", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "achievements", label: "Achievements" },
+  { id: "contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -86,7 +86,7 @@ export default function Navbar() {
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
             </div>
             <span className="serif-heading font-semibold text-lg tracking-wider text-ivory group-hover:text-gold-400 transition-colors">
-              THE ROYAL ARCHIVE
+              ARYAN KHANNA
             </span>
           </button>
 

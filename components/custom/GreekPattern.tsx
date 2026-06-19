@@ -64,7 +64,7 @@ export default function GreekPattern({
   return (
     <div
       className={cn(
-        "absolute inset-0 pointer-events-none select-none mix-blend-overlay animate-greek-pulse",
+        "absolute inset-0 pointer-events-none select-none mix-blend-overlay",
         className
       )}
       style={{ opacity: opacity * 0.5 }}
